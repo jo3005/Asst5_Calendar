@@ -45,11 +45,7 @@ $(document).ready(function(){
     
         
     function saveValuesToLocalStorage(whichDay=currentDay,lsName,data){
-        console.log("Values to save:")
-        console.log(whichDay);
-        console.log(lsName);
-        console.log(data);
-        
+
         var diaryEntry={date:'', start_time: '', diary:['']};
         var dataObj= [diaryEntry];
         
@@ -62,7 +58,7 @@ $(document).ready(function(){
         //Replace current date's data with new data
         if (diaryEntry!= undefined){
             var whichelement = getElementNumber(dataObj,diaryEntry);
-            console.log('found it in element ' + whichelement);
+            //console.log('found it in element ' + whichelement);
 
             dataObj[whichelement]={date:moment(whichDay).format('DDMMYYYY'),
                                     start_time: starthr,
@@ -172,7 +168,7 @@ $(document).ready(function(){
                     newentry.attr('class','col col-md-9 timeslot');
                     break;
             }; 
-            console.log(index + ' : ' + glinputArray[index-starthr]);
+            //console.log(index + ' : ' + glinputArray[index-starthr]);
             var thedata= glinputArray[index-starthr];
             
             newentry.attr('class','col col-md-9 timeslot')
@@ -219,7 +215,7 @@ $(document).ready(function(){
 
         // Replace the diary global variable with the new data
         glinputArray[whichelement]=$('#'+ whichbtn.substr(0,2) + 'timeslot').val();
-        console.log(glinputArray);
+        //console.log(glinputArray);
         
         // Save the updated array to local storage
         saveValuesToLocalStorage(currentDatetime,"myDiaryEntries",glinputArray);
