@@ -1,8 +1,8 @@
 # Asst5_Calendar
 Create a daily diary
 
-url:
-github repository:
+url:https://jo3005.github.io/Asst5_Calendar/.
+github repository: https://github.com/jo3005/Asst5_Calendar/
 
 ## Description:
 This website displays a daily planner for the current day.
@@ -16,16 +16,16 @@ Although the starting time is not currently user changeable, the system has been
 
 ## Original User criteria:
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+GIVEN I am using a daily planner to create a schedule,
+WHEN I open the planner,
+THEN the current day is displayed at the top of the calendar,
+WHEN I scroll down,
+THEN I am presented with timeblocks for standard business hours,
+WHEN I view the timeblocks for that day,
+THEN each timeblock is color coded to indicate whether it is in the past, present, or future,
+WHEN I click into a timeblock,
+THEN I can enter an event,
+WHEN I click the save button for that timeblock,
+THEN the text for that event is saved in local storage,
+WHEN I refresh the page,
+THEN the saved events persist.
