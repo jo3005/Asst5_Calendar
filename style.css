@@ -1,0 +1,122 @@
+:root{
+  --main-bg-color:white;
+  --second-bg-color:#e6e6e6;
+  --tertiary-color: rgb(37, 37, 37);
+  --main-text-color:  rgb(37, 37, 37);
+  --contrast-text-color: white;
+  --color-five:  #808080;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color:black;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: var(--second-bg-color);
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: auto;
+  border-top: 1px solid var(--main-bg-color);
+}
+
+
+.row > .hour {
+  border-color: var(--second-bg-color);
+}
+.hour {
+  background-color: var(--main-bg-color);
+  color: var(--color-five); 
+  border-top: 1px solid var(--main-bg-color); 
+  
+}
+
+.timeslot, .hour, .btnbox {
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+
+.btnbox {
+  padding-right: 5px;
+}
+
+.timeslot{
+  background: transparent;
+  border-style: none;
+  overflow-y: visible;
+  min-height: auto;
+  
+}
+
+.past {
+  background-color:  #e6e6e6;
+  color: white;
+}
+
+.present {
+  background-color:#ffcccc;
+  color: white;
+}
+
+.future {
+  background-color: #daf1da;
+  color: black;
+}
+
+.saveBtn {
+  border: 1px solid var(--color-five);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--second-bg-color);
+  color: white;
+  float:right;
+  font-size: 0.7rem;
+
+}
+
+.saveBtn>.fas{
+  color: var(--color-five);
+  text-align: left;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+#plannerblock {
+  overflow-y: scroll;
+  scroll-padding: 3px;
+  scrollbar-base-color: var(--second-bg-color);
+  scrollbar-face-color: var(--main-bg-color);
+  scrollbar-width: 10px;
+
+}
+
